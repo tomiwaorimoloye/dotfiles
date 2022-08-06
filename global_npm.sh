@@ -1,5 +1,6 @@
 npm install -g /opt/homebrew/lib
 npm install -g bash-language-server@3.0.5
+npm install -g emmet-ls@0.3.0
 npm install -g eslint@8.21.0
 npm install -g heroku@7.60.2
 npm install -g live-server@1.2.2
