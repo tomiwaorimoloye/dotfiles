@@ -19,10 +19,20 @@ nnoremap("<leader>w", "<c-w>")
 nnoremap("<leader>s", "<cmd>split<cr>")
 nnoremap("<leader>vs", "<cmd>vsplit<cr>")
 
--- remap switching tabs
-nnoremap("<leader><Tab>", "<cmd>tabn<cr>")
-nnoremap("<leader><s-Tab>", "<cmd>tabp<cr>")
-nnoremap("<c-t>", "<cmd>tabedit<cr>")
+-- remap switching tabs using bufferline
+nnoremap("<leader><Tab>", "<cmd>BufferLineCycleNext<cr>")
+nnoremap("<leader><s-Tab>", "<cmd>BufferLineCyclePrev<cr>")
+nnoremap("<leader>1<Tab>", "<Cmd>BufferLineGoToBuffer 1<CR>")
+nnoremap("<leader>2<Tab>", "<Cmd>BufferLineGoToBuffer 2<CR>")
+nnoremap("<leader>3<Tab>", "<Cmd>BufferLineGoToBuffer 3<CR>")
+nnoremap("<leader>4<Tab>", "<Cmd>BufferLineGoToBuffer 4<CR>")
+nnoremap("<leader>5<Tab>", "<Cmd>BufferLineGoToBuffer 5<CR>")
+nnoremap("<leader>6<Tab>", "<Cmd>BufferLineGoToBuffer 6<CR>")
+nnoremap("<leader>7<Tab>", "<Cmd>BufferLineGoToBuffer 7<CR>")
+nnoremap("<leader>8<Tab>", "<Cmd>BufferLineGoToBuffer 8<CR>")
+nnoremap("<leader>9<Tab>", "<Cmd>BufferLineGoToBuffer 9<CR>")
+nnoremap("<leader>$<Tab>", "<Cmd>BufferLineGoToBuffer -1<CR>")
+nnoremap("<leader>x<Tab>", "<Cmd>BufferLinePickClose<CR>")
 
 -- moving code between lines
 nnoremap("<s-j>", "<cmd>move +1<cr>")

@@ -2,6 +2,7 @@ require'lspconfig'.pyright.setup{}
 require'lspconfig'.eslint.setup{}
 require'lspconfig'.clangd.setup{}
 require'lspconfig'.bashls.setup{}
+require'lspconfig'.emmet_ls.setup{}
 
 --Enable (broadcasting) snippet capability for completion
 local capabilities = vim.lsp.protocol.make_client_capabilities()
