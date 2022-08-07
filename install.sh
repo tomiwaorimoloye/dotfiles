@@ -1,4 +1,5 @@
 #!/bin/bash
+# read the README file first
 
 function install() {
   # install homebrew and all the brew installations
@@ -25,8 +26,6 @@ function install() {
 
 
 # this will update global modules to global_npm  & brewfiles and then you should 
-# git add and commit on this computer and then git push
-# then git pull and run bash install.sh on the new computer
 function updateLocal() {
   # create a file (global_npm.sh) that installs global node_modules and lspconfigs servers
   npm list -g --depth=0 > global_npm.txt && sed -i '' 's/├── //g' global_npm.txt && sed -i '' 's/└── //g' global_npm.txt && sed -i '' 's/\/usr\/local\/lib//g' global_npm.txt && sed -i '' '/^[[:space:]]*$/d' global_npm.txt && rm global_npm.sh; touch global_npm.sh && cat global_npm.txt | while read line; do echo "npm install -g "${line} >> global_npm.sh; done && chmod 755 global_npm.sh && rm global_npm.txt
