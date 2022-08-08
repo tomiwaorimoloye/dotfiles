@@ -34,11 +34,5 @@ nnoremap("<leader>9<Tab>", "<Cmd>BufferLineGoToBuffer 9<CR>")
 nnoremap("<leader>$<Tab>", "<Cmd>BufferLineGoToBuffer -1<CR>")
 nnoremap("<leader>x<Tab>", "<Cmd>BufferLinePickClose<CR>")
 
--- moving code between lines
-nnoremap("<s-j>", "<cmd>move +1<cr>")
-nnoremap("<s-k>", "<cmd>move -2<cr>")
-
-
-
-
-
+-- format with prettier
+nnoremap("<leader>gp", "<cmd>Prettier<cr>")

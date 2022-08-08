@@ -15,12 +15,6 @@ require'lspconfig'.cssls.setup {
   capabilities = capabilities,
 }
 
-
-
--- format js files on save
-vim.cmd([[autocmd BufWritePre *.tsx,*.ts,*.jsx,*.js EslintFixAll]])
-vim.cmd([[autocmd BufWritePre *.js,*.html Neoformat]])
-
 -- Mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
 local opts = { noremap=true, silent=true }
