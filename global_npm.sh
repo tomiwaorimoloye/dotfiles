@@ -2,9 +2,10 @@ npm install -g /opt/homebrew/lib
 npm install -g bash-language-server@3.0.5
 npm install -g emmet-ls@0.3.0
 npm install -g eslint@8.21.0
+npm install -g heroku@7.60.2
 npm install -g live-server@1.2.2
 npm install -g nodemon@2.0.19
-npm install -g npm@8.15.0
+npm install -g npm@8.19.2
 npm install -g prettier@2.7.1
 npm install -g pyright@1.1.264
 npm install -g tls-test@0.0.1
